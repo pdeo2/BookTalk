@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import connectDB from "./db/connectDB.js";
-import authRouter from "./routes/authRoutes.js";
+import authRouter from "./routes/authRoutes.js"
 import bookRoutes from "./routes/bookRoutes.js";
 import profileRoutes from "./routes/profileRoutes.js";
 import multer from "multer";
@@ -28,7 +28,7 @@ app.use("/api/books", upload.single("coverImage"), bookRoutes);
 
 app.use("/api/profile", profileRoutes);
 
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 // Start the server
 const start = async () => {
